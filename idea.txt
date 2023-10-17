@@ -1,0 +1,27 @@
+In each pane or tab, a filter is displayed.
+
+Each tab and pane has a unique number.
+
+Ctrl+Dir where dir is hjkl or an arrow key will switch panes
+
+Ctrl+1-9 will switch to that tab/pane
+
+Ctrl+Tab will switch forward one tab
+
+Ctrl+Shift+Tab will switch back
+
+The tab with focus has a blue tab
+
+The pane with focus has a blue toolbar
+
+The toolbar in each pane has a few functions
+
+Check items and then hit an action in the toolbar
+
+path = ('/' segment_list)+
+segment_list = segment | list
+list = '{' ws segment ws (',' ws segment)* ws ','? ws '}'
+segment = word | '*' | '?' | '+' | '**'
+criterion = path
+intersection = intersection criterion | criterion
+union = union '+' criterion | criterion
